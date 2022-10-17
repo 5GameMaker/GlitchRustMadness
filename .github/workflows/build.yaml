@@ -30,7 +30,7 @@ jobs:
           args: --release
 
       - name: Upload artifact
-        - uses: actions/upload-artifact@v3
-          with:
-            name: bin
-            path: target/release/glitch-rust-madness
+        uses: actions/upload-artifact@v3
+        with:
+          name: bin
+          path: target/release/glitch-rust-madness
